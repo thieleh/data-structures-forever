@@ -1,3 +1,5 @@
+package com.datastructure.vector;
+
 public class Contact {
 
     private String name;
@@ -38,7 +40,7 @@ public class Contact {
 
     @Override
     public String toString() {
-        return "Contact{" +
+        return "com.datastructure.vector.Contact{" +
                 "name='" + name + '\'' +
                 ", phone='" + phone + '\'' +
                 ", email='" + email + '\'' +

@@ -104,6 +104,13 @@ public class List<T> {
        }
     }
 
+    public void cleanList() {
+        for (int i = 0; i < size + 1; i++) {
+            this.elements[i] = null;
+        }
+        this.size = 0;
+    }
+
 
     //I think this is really ugly
     @Override

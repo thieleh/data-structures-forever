@@ -1,15 +1,12 @@
-import com.datastructure.vector.List;
-import com.datastructure.vector.ObjectVector;
-import com.datastructure.vector.Vector;
+package com.datastructure.vector;
 
 import java.util.ArrayList;
 
-public class Main {
+public class ArrayPlayground {
 
     public static void main(String[] args) {
 
         ObjectVector vector = new ObjectVector(3);
-        List<String> vectorList = new List<>(1);
         ArrayList<String> arrayList = new ArrayList<>();
 
         arrayList.add("A");
@@ -57,16 +54,11 @@ public class Main {
         vector.addElementGoodWay("F");
         vector.addElementGoodWay("G");
 
-        vectorList.addElementGoodWay("Ugly list vector");
-        vectorList.addElementGoodWay("Testing if this is working");
-        System.out.println(vectorList);
 
         System.out.println("---------------------------------------------");
 
         System.out.println(vector);
         vector.addNewElement(3, "1");
-
-        System.out.println(vector);
 
         vector.addNewElement(5, "2");
         System.out.println(vector);
@@ -76,7 +68,6 @@ public class Main {
 
         System.out.println("---------------------------------------------");
 
-
         System.out.println("I would like to remove an element.");
         int position = vector.findElement("2");
         if (position > -1) {
@@ -85,19 +76,5 @@ public class Main {
         } else {
             System.out.println("This element doesn't exists.");
         }
-
-        List<String> list = new List<>(100);
-        list.addElementGoodWay("1");
-        list.addElementGoodWay("2");
-        list.addElementGoodWay("1");
-        list.addElementGoodWay("235");
-
-        System.out.println("Last element is: " + list.lastElement("1"));
-
-        list.remove("235");
-
-        System.out.println(list);
-        System.out.println(list.containsToList("1"));
-        System.out.println(list.searchElement(2));
     }
 }
